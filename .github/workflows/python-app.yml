@@ -25,4 +25,4 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Test with testing script
-      run: python3 # TODO: insert the right path
+      run: python3 -m pytest OPEN_ME_LAB_FILES_INSIDE/sde-github-actions/.github/scripts/execute_tests.py
